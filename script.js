@@ -8,7 +8,7 @@ const budgetText = document.querySelector("#budget-text");
 const priceShow = document.querySelector("#total-price");
 const chcekBudget = document.querySelector("#checkbudget-button");
 const messageText = document.querySelector("#message-textarea");
-const regex = /^[^!@#$%^&*()_+\-=\[\]{};':"\\|<>\/?]*$/;
+
 
 let totalPrice,
   a = [];
