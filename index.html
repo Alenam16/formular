@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Avion salon</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+        
+      <h1> <i class="bi bi-airplane"></i>Objednávka letenek:</h1><br><hr></h1>
+      <div>
+        <i class="bi bi-ticket-detailed-fill"></i>
+        <label for="ticket-select">Vyberte letenku: </label>
+        <select name="tickets" id="ticket-select" class="select">
+          <option value="">--výběr--</option>
+          <option value="500">Praha 500 Kč</option>
+          <option value="3000">Frankfurt 3000 Kč</option>
+          <option value="15000">New York 15000 Kč</option>
+          <option value="30000">Sydney 30000 Kč</option>
+        </select>
+        <label for="quantity-select">Vyberte počet letenek:</label>
+        <select name="quantity" id="quantity-select" class="select">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <label for="returnticket-checkbox">Zatrhněte, pokud chcete také zpáteční letenku:</label>
+          <input type="checkbox" id="returnticket-checkbox" name="returnticket" class="ticket-zpet"/>
+          <label for="returnticket-checkbox">Ano</label>
+      </div>
+      <hr>
+      <fieldset>
+        <legend >Vyber třídu:</legend>     
+        <div>
+          <input type="radio" class="radios" id="economyclass-radio" name="travelclass" value="1" checked />
+          <label for="economyclass-radio">Economy class (bez přirážky)</label>
+        </div>    
+        <div>
+          <input type="radio" class="radios" id="businessclass-radio" name="travelclass" value="2" />
+          <label for="businessclass-radio">Business class (+ 25 procent k ceně)</label>
+        </div>     
+        <div>
+          <input type="radio" class="radios" id="royalclass-radio" name="travelclass" value="3" />
+          <label for="businessclass-radio">Royal class(+ 50 procent k ceně)</label>
+        </div>       
+      </fieldset>
+      <hr>
+      <div>
+      Celková cena letenek: <span id="total-price">0</span> Kč.<br>
+      <label for="budget-text">Zadejte Váš rozpočet:</label>
+      <input type="text" class="inputbox" id="budget-text" name="budget"> Kč.
+      <br>
+      <button type="button" id="checkbudget-button" name="checkbudget" class="btn-primary">Spočítat</button> 
+      </div>
+      <hr>
+      <label for="story">Zpráva:</label>
+        <div>
+            <textarea id="message-textarea" class="inputbox" name="message" rows="10" cols="40" placeholder="Napište nám zde..."></textarea>
+            
+        </div>
+        <button class="btn-primary">Odeslat</button>
+      <div>
+
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
